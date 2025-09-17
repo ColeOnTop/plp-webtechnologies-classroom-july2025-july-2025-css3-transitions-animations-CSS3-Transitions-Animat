@@ -1,0 +1,77 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background: #0077b6;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  background: #023e8a;
+  padding: 10px;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd60a;
+}
+
+/* Button Animation */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #0096c7;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #00b4d8;
+}
+
+/* Box for Animation */
+#animateBox {
+  width: 100px;
+  height: 100px;
+  background: #ff6f61;
+  margin-top: 20px;
+  display: none;
+  border-radius: 10px;
+}
+
+/* CSS Animation Keyframes */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+.animate {
+  display: block !important;
+  animation: bounce 1s ease-in-out infinite;
+}
